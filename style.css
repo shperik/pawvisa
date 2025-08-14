@@ -8,7 +8,7 @@ body {
 
 /* Шапка */
 header {
-  background: #123d2a; /* тёмно-зелёный */
+  background: #123d2a;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -16,14 +16,9 @@ header {
   padding: 15px 50px;
 }
 
-header .logo {
-  display: flex;
-  align-items: center;
-}
-
 header .logo img {
-  height: 50px;
-  margin-right: 10px;
+  height: 80px; /* Увеличенное лого */
+  margin-right: 15px;
 }
 
 header nav a {
@@ -39,23 +34,20 @@ header nav a:hover {
 
 /* Баннер */
 .hero {
+  background: url('hero.jpg') center/cover no-repeat;
+  color: white;
   text-align: center;
-  padding: 80px 20px;
-  background: #eae7dc;
+  padding: 100px 20px;
 }
 
 .hero h2 {
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 10px;
-}
-
-.hero p {
-  margin-bottom: 20px;
 }
 
 .btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 25px;
   background: #123d2a;
   color: white;
   text-decoration: none;
@@ -66,18 +58,18 @@ header nav a:hover {
   background: #1d5a3c;
 }
 
-/* Блоки */
+/* Блоки преимуществ */
 .features {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-around;
   padding: 50px 20px;
   background: #fff;
 }
 
 .card {
-  flex: 1 1 200px;
-  margin: 10px;
+  flex: 1 1 250px;
+  margin: 15px;
   padding: 20px;
   background: #f0f0eb;
   border-radius: 10px;
@@ -85,8 +77,28 @@ header nav a:hover {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
 .card h3 {
   color: #123d2a;
+}
+
+/* О компании */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  background: #eae7dc;
+}
+
+.about img {
+  width: 50%;
+  border-radius: 10px;
+  margin-right: 20px;
 }
 
 /* Футер */
@@ -95,5 +107,5 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px;
-  font-size: 0.9em;
 }
+
