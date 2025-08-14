@@ -15,45 +15,61 @@
       <h1>PawVisa</h1>
     </div>
     <nav>
-      <a href="about.html">О компании</a>
-      <a href="services.html">Услуги</a>
-      <a href="products.html">Готовые продукты</a>
-      <a href="contacts.html">Контакты</a>
+      <a href="#about">О компании</a>
+      <a href="#services">Услуги</a>
+      <a href="#products">Готовые продукты</a>
+      <a href="#contacts">Контакты</a>
     </nav>
   </header>
 
   <!-- Главный баннер -->
   <section class="hero">
-    <h2>Наша цель – чтобы Вы не расставались со своим питомцем</h2>
-    <p>Мы сопровождаем животных в путешествиях по всему миру</p>
-    <a href="services.html" class="btn">Наши услуги</a>
+    <div class="hero-content">
+      <h2>Наша цель – чтобы Вы не расставались со своим питомцем</h2>
+      <p>Мы сопровождаем животных в путешествиях по всему миру</p>
+      <a href="#services" class="btn">Наши услуги</a>
+    </div>
+  </section>
+
+  <!-- О компании -->
+  <section id="about" class="about">
+    <img src="about.jpg" alt="Путешествие с питомцем">
+    <div>
+      <h3>О компании</h3>
+      <p>Мы помогаем владельцам перевозить своих любимцев безопасно и комфортно по всему миру.</p>
+    </div>
   </section>
 
   <!-- Блоки преимуществ -->
-  <section class="features">
+  <section id="services" class="features">
     <div class="card">
+      <img src="route.jpg" alt="Маршрут">
       <h3>Разработка маршрута</h3>
       <p>Подберём лучший путь для вашего питомца</p>
     </div>
-    <div class="card">
+    <div class="card" id="products">
+      <img src="guides.jpg" alt="Гайды">
       <h3>Готовые продукты</h3>
       <p>Полезные гайды и материалы</p>
     </div>
     <div class="card">
+      <img src="help.jpg" alt="Помощь">
       <h3>Помощь на каждом этапе</h3>
       <p>От документов до прилёта</p>
     </div>
     <div class="card">
+      <img src="destinations.jpg" alt="Направления">
       <h3>Направления перевозок</h3>
       <p>ОАЭ, Китай, Япония, ЕС, США и Канада</p>
     </div>
   </section>
 
   <!-- Футер -->
-  <footer>
+  <footer id="contacts">
     <p>© 2025 PawVisa. Все права защищены.</p>
     <p>Email: info@pawvisa.com | WhatsApp: +7 999 123-45-67</p>
   </footer>
 
 </body>
 </html>
+
