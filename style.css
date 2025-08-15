@@ -1,111 +1,153 @@
-/* Общий стиль */
-body {
+/* ========== Общие стили ========== */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f4;
-  color: #333;
+  padding: 0;
 }
 
-/* Шапка */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ========== Контейнер ========== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ========== Header ========== */
 header {
-  background: #123d2a;
-  color: #fff;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
+  padding: 15px 0;
 }
 
-header .logo img {
-  height: 80px; /* Увеличенное лого */
-  margin-right: 15px;
-}
-
-header nav a {
-  color: #fff;
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #000;
   text-decoration: none;
-  margin-left: 20px;
-  font-weight: bold;
 }
 
-header nav a:hover {
-  text-decoration: underline;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-/* Баннер */
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: #ff6b00;
+}
+
+/* ========== Hero Section ========== */
 .hero {
-  background: url('hero.jpg') center/cover no-repeat;
-  color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 100px 20px 60px;
+  background: linear-gradient(135deg, #fefcea, #f1da36);
 }
 
-.hero h2 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
 .btn {
-  display: inline-block;
-  padding: 12px 25px;
-  background: #123d2a;
-  color: white;
+  padding: 12px 30px;
+  background: #ff6b00;
+  color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 30px;
+  transition: background 0.3s;
 }
 
 .btn:hover {
-  background: #1d5a3c;
+  background: #e55a00;
 }
 
-/* Блоки преимуществ */
-.features {
+/* ========== Advantages & Consultations ========== */
+.advantages, .consultation-formats, .support-section {
+  padding: 80px 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 50px 20px;
-  background: #fff;
-}
-
-.card {
-  flex: 1 1 250px;
-  margin: 15px;
-  padding: 20px;
-  background: #f0f0eb;
-  border-radius: 10px;
+  gap: 30px;
+  justify-content: center;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.card img {
-  max-width: 100%;
-  border-radius: 8px;
+.advantage, .consultation, .support-card {
+  background: #fff8f0;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.advantage img, .consultation img, .support-card img {
+  width: 60px;
   margin-bottom: 15px;
 }
 
-.card h3 {
-  color: #123d2a;
+.advantage:hover, .consultation:hover, .support-card:hover {
+  transform: translateY(-5px);
 }
 
-/* О компании */
-.about {
-  display: flex;
-  align-items: center;
-  padding: 50px;
-  background: #eae7dc;
+.price {
+  font-weight: 700;
+  color: #ff6b00;
+  margin-top: 15px;
+  font-size: 1.2rem;
 }
 
-.about img {
-  width: 50%;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-/* Футер */
+/* ========== Footer ========== */
 footer {
-  background: #123d2a;
+  background: #333;
   color: #fff;
+  padding: 30px 0;
   text-align: center;
-  padding: 20px;
+  margin-top: 50px;
+  font-size: 0.9rem;
 }
 
+/* ========== Адаптив ========== */
+@media(max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .advantages, .consultation-formats, .support-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
