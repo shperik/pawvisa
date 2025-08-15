@@ -3,37 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PawVisa – Путешествия с питомцами</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Flaticon Icons -->
-  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css">
-  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular/css/uicons-regular.css">
+  <title>PawVisa — Главная</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- AOS анимации -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-
-  <!-- Логотип -->
+  <!-- Header -->
   <header>
-    <img class="logo" src="img/logo.png" alt="PawVisa логотип"/>
+    <div class="container header-container">
+      <a href="index.html" class="logo">PawVisa</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="consultations.html">Консультации</a></li>
+          <li><a href="support.html">Сопровождение</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Цель -->
-  <section class="goal">
-    <h1>Мы бережно сопровождаем<br>вашего любимца<br>в любое путешествие</h1>
-    <a href="https://t.me/yourBot" class="btn-start">Начать здесь</a>
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <div class="container">
+      <h1>Подготовка к путешествию с питомцем легко!</h1>
+      <p>Мы помогаем выбрать рейс, подготовить документы и сопровождать на каждом этапе.</p>
+      <a href="consultations.html" class="btn">Записаться на консультацию</a>
+    </div>
   </section>
 
-  <!-- 3 большие кнопки -->
-  <section class="nav-buttons">
-    <a href="#guides" class="nav-card">
-      <i class="fi fi-rs-hand-holding-heart"></i>
-      <span>Купить гайды</span>
-    </a>
-    <a href="#consult" class="nav-card">
-      <i class="fi fi-rr-plane"></i>
-      <span>Консультация</span>
-    </a>
-    <a href="#package" class="nav-card">
-      <i class="fi fi-rr-plane"></i>
-      <span>Пакет сопрово
+  <!-- Преимущества -->
+  <section class="advantages" data-aos="fade-up">
+    <div class="container">
+      <div class="advantage">
+        <img src="assets/icons/flight.svg" alt="Перелёт">
+        <h3>Подбор рейса</h3>
+        <p>Идеальные маршруты для вашего питомца</p>
+      </div>
+      <div class="advantage">
+        <img src="assets/icons/document.svg" alt="Документы">
+        <h3>Документы</h3>
+        <p>Проверка и оформление всех справок</p>
+      </div>
+      <div class="advantage">
+        <img src="assets/icons/support.svg" alt="Сопровождение">
+        <h3>Сопровождение</h3>
+        <p>Полное или частичное сопровождение по шагам</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 PawVisa. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+</body>
+</html>
 
